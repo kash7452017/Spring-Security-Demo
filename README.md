@@ -473,11 +473,11 @@ public class DemoController {
 >
 >* CSRF跨域請求偽造，英文全稱是Cross Site Request Forgery，如果使用的是 Spring MVC<form:form>標記或Thymeleaf 2.1+並且正在使用@EnableWebSecurity，CsrfToken則會自動包含（使用CsrfRequestDataValueProcessor），否則須自行手動添加
 >
->>```
+```
 <input type="hidden"
 		   name="${_csrf.parameterName}"
 		   value="${_csrf.token}" />
->>```
+```
 
 **fancy-login.jsp登入頁面完整程式碼**
 ```
